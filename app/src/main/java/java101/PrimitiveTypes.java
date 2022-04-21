@@ -3,6 +3,8 @@
  */
 package java101;
 
+import java.math.BigDecimal;
+
 public class PrimitiveTypes {
 
     public static void main(String[] args) {
@@ -10,8 +12,16 @@ public class PrimitiveTypes {
         char character = 'C';
         int number = 10;
         boolean result= true;
-        double doubleNumber = 3.455;
         float floatNumber = 3.455f;
+
+        double doubleNumber = 0.02;
+        double doubleNumber2 = 0.03;
+        double resultDouble = doubleNumber2 - doubleNumber;
+
+        BigDecimal bigNumber = new BigDecimal("0.02");
+        BigDecimal bigNumber2 = new BigDecimal("0.03");
+        BigDecimal resultBigNumber = bigNumber2.subtract(bigNumber);
+
 
         System.out.println(text);
         System.out.println(number);
@@ -19,6 +29,9 @@ public class PrimitiveTypes {
         System.out.println(doubleNumber);
         System.out.println(character);
         System.out.println(floatNumber);
+        System.out.println(bigNumber);
+        System.out.println(resultDouble);
+        System.out.println(resultBigNumber);
     }
 
 }
