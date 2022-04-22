@@ -4,6 +4,7 @@
 package java101;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class PrimitiveTypes {
 
@@ -14,24 +15,30 @@ public class PrimitiveTypes {
         boolean result= true;
         float floatNumber = 3.455f;
 
+        System.out.println("String: " + text);
+        System.out.println("Integer: " + number);
+        System.out.println("Boolean: " + result);
+        System.out.println("Char: " + character);
+        System.out.println("Float: " + floatNumber);
+
         double doubleNumber = 0.02;
         double doubleNumber2 = 0.03;
         double resultDouble = doubleNumber2 - doubleNumber;
+
+        System.out.println("Double: " + doubleNumber);
+        System.out.println("Another Double " + doubleNumber2);
+        System.out.println("Result Double: "+ resultDouble);
 
         BigDecimal bigNumber = new BigDecimal("0.02");
         BigDecimal bigNumber2 = new BigDecimal("0.03");
         BigDecimal resultBigNumber = bigNumber2.subtract(bigNumber);
 
 
-        System.out.println(text);
-        System.out.println(number);
-        System.out.println(result);
-        System.out.println(doubleNumber);
-        System.out.println(character);
-        System.out.println(floatNumber);
-        System.out.println(bigNumber);
-        System.out.println(resultDouble);
-        System.out.println(resultBigNumber);
+        System.out.println("BigDecimal: " + bigNumber);
+        System.out.println("Another BigDecimal: " + bigNumber2);
+        System.out.println("Result BigDecimal: " + resultBigNumber);
+        System.out.println("Result BigDecimal Another precision: " + resultBigNumber.setScale(10, RoundingMode.HALF_UP));
+
     }
 
 }

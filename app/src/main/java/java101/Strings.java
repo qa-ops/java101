@@ -20,7 +20,6 @@ public class Strings {
         String[] split = text.split(" ");
         System.out.println("Length of array: " + split.length);
         System.out.println("Is split an array?: " + (split instanceof String[]));
-
     }
 
 
